@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Formulario de Contacto</string>
+    <string name="til_nombre">Nombre Completo</string>
+    <string name="btn_cambiar_fecha">Cambiar Fecha</string>
+    <string name="til_fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="til_telefono">Teléfono</string>
+    <string name="til_email">Email</string>
+    <string name="til_descripcion">Descripción de Contacto</string>
+    <string name="separador">/</string>
+    <string name="boton_confirmar">Confirmar</string>
+    <string name="pnombre">Nombre</string>
+    <string name="pfecha">Fecha</string>
+    <string name="ptelefono">Telefono</string>
+    <string name="pemail">Email</string>
+    <string name="pdescripcion">Descripcion</string>
+    <string name="nombre">Nombre</string>
+    <string name="fecha">Fecha Nac.</string>
+    <string name="fecha_valor">DD/MM/YYYY</string>
+    <string name="telefono">Tel.</string>
+    <string name="telefono_valor">555000555</string>
+    <string name="email">Email</string>
+    <string name="email_valor">algo@email.com</string>
+    <string name="descripcion">Descripción</string>
+    <string name="desc_valor">Aqui se describe al contacto</string>
+    <string name="btn_editar">Editar Contacto</string>
+</resources>
