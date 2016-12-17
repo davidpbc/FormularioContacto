@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -30,28 +31,21 @@ public class MainActivity extends AppCompatActivity implements DatePickerFragmen
 
 
         Bundle params = getIntent().getExtras();
-        try {
+        if (params == null) {
+            Log.d("Main","El intent esta vacío");
+        }
+        else {
             nombre = params.getString(getResources().getString(R.string.pnombre));
             fecha = params.getString(getResources().getString(R.string.pfecha));
             telefono = params.getString(getResources().getString(R.string.ptelefono));
             email = params.getString(getResources().getString(R.string.pemail));
             descripcion = params.getString(getResources().getString(R.string.pdescripcion));
-        } catch (java.lang.NullPointerException e) {
-            nombre = "";
-            fecha = "";
-            telefono = "";
-            email = "";
-            descripcion = "";
 
-        }
-
-        if (nombre != ""){
             tieNombre = (android.support.design.widget.TextInputEditText) findViewById(R.id.tieNombre);
             tieTelefono = (android.support.design.widget.TextInputEditText) findViewById(R.id.tieTelefono);
             tieEmail = (android.support.design.widget.TextInputEditText) findViewById(R.id.tieEmail);
             tieDescripcion = (android.support.design.widget.TextInputEditText) findViewById(R.id.tieDescripcion);
             tvFechaValor = (TextView) findViewById(R.id.tvFechaValor);
-
 
             tieNombre.setText(nombre);
             tieEmail.setText(email);
